@@ -10,43 +10,36 @@ function Login() {
     const[loginmethod,setLoginmethod] = useState(false);
     const[passwordDisplayer,setpasswordDisplayer]=useState(false);
     const styles={
-        loginbox:{
-            width:"100vw",
-            height:"100vh",
-            // backgroundColor:"#eeeeee",
-            backgroundImage:`url(${bg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            color:"black",
-//                 background:" rgb(57,62,70)",
-// background: "linear-gradient(90deg, rgba(57,62,70,1) 33%, rgba(253,112,20,1) 100%)",
-        },  
-        box:{
-            height:"50%",
-            width:"60%",
-            borderRadius:"50px",
-            boxShadow:" 0 5px 15px rgba(0,0,0,0.8)",
+//         loginbox:{
+//             width:"100vw",
+//             height:"100vh",
+//             // backgroundColor:"#eeeeee",
+//             backgroundImage:`url(${bg})`,
+//             backgroundSize: 'cover',
+//             backgroundPosition: 'center',
+//             color:"black",
+// //                 background:" rgb(57,62,70)",
+// // background: "linear-gradient(90deg, rgba(57,62,70,1) 33%, rgba(253,112,20,1) 100%)",
+//         },  
+        // box:{
+        //     height:"50%",
+        //     width:"60%",
+        //     borderRadius:"50px",
+        //     boxShadow:" 0 5px 15px rgba(0,0,0,0.8)",
             
-            // background: "rgb(249,245,240)",
-            // background: "linear-gradient(90deg, rgba(249,245,240,1) 0%, rgba(244,153,26,1) 0%, rgba(41,40,61,1) 56%)",
-            background: "rgb(253,112,20)",
-            background: "linear-gradient(90deg, rgba(253,112,20,1) 0%, rgba(200,98,34,1) 40%, rgba(242,234,211,1) 100%)",
-        },
-        boxdivider:{
-            height:"100%",
-            width:"50%",
-            // backgroundColor:"#F9F5F0",
-            color:"#eeeeee",
+        //     // background: "rgb(249,245,240)",
+        //     // background: "linear-gradient(90deg, rgba(249,245,240,1) 0%, rgba(244,153,26,1) 0%, rgba(41,40,61,1) 56%)",
+        //     background: "rgb(253,112,20)",
+        //     background: "linear-gradient(90deg, rgba(253,112,20,1) 0%, rgba(200,98,34,1) 40%, rgba(242,234,211,1) 100%)",
+        // },
+        // boxdivider:{
+        //     height:"100%",
+        //     width:"50%",
+        //     // backgroundColor:"#F9F5F0",
+        //     color:"#eeeeee",
             
-        },
-        form:{
-            height:"100%",
-            width:"50%",
-            // backgroundColor:"#F4991A",
-            color:"#321313"
-            
-            
-        },
+        // },
+        
         button:{
             backgroundColor:"#321313",
             height:"5vh",
@@ -61,24 +54,6 @@ function Login() {
             boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)', 
             position: 'relative',        
             overflow: 'hidden', 
-        },
-        label:{
-            width:"35%"
-        },
-        input:{
-            height:"3vh",
-            width:"65%",
-
-        },
-        checkbox:{
-            width:"5vw",
-            height:"3vh"
-        },
-        logo:{
-            height:"25vh",
-        },
-        inputs:{
-            width:"80%",
         },
         buttonHover: {
             backgroundColor: '#e38b00',  // Darker on hover
