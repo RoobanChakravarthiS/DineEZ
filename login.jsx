@@ -1,53 +1,22 @@
 import { useState } from "react";
-import './App.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import logo from './logo.png';
-import bg from "./background.jpg";
+import { useForm } from 'react-hook-form';
+import { useNavigate } from "react-router-dom";
+import '../App.css';
+import bg from "../assets/background.jpg";
+import logo from '../assets/logo.png';
+
 function Login() {
-    const [username,setUsername] = useState("");
-    const[number,setNumber] = useState();
-    const[password,setPassword] = useState("");
-    const[loginmethod,setLoginmethod] = useState(false);
-    const[passwordDisplayer,setpasswordDisplayer]=useState(false);
-    const styles={
-//         loginbox:{
-//             width:"100vw",
-//             height:"100vh",
-//             // backgroundColor:"#eeeeee",
-//             backgroundImage:`url(${bg})`,
-//             backgroundSize: 'cover',
-//             backgroundPosition: 'center',
-//             color:"black",
-// //                 background:" rgb(57,62,70)",
-// // background: "linear-gradient(90deg, rgba(57,62,70,1) 33%, rgba(253,112,20,1) 100%)",
-//         },  
-        // box:{
-        //     height:"50%",
-        //     width:"60%",
-        //     borderRadius:"50px",
-        //     boxShadow:" 0 5px 15px rgba(0,0,0,0.8)",
-            
-        //     // background: "rgb(249,245,240)",
-        //     // background: "linear-gradient(90deg, rgba(249,245,240,1) 0%, rgba(244,153,26,1) 0%, rgba(41,40,61,1) 56%)",
-        //     background: "rgb(253,112,20)",
-        //     background: "linear-gradient(90deg, rgba(253,112,20,1) 0%, rgba(200,98,34,1) 40%, rgba(242,234,211,1) 100%)",
-        // },
-        // boxdivider:{
-        //     height:"100%",
-        //     width:"50%",
-        //     // backgroundColor:"#F9F5F0",
-        //     color:"#eeeeee",
-            
-        // },
-        
+
+    const { register, handleSubmit, formState: { errors } } = useForm()
+    const navigate = useNavigate()
+
+    const [passWordToggle,setPassWordToggle] = useState(true)
+
+    const styles={  
         button:{
             backgroundColor:"#321313",
-            height:"5vh",
-            width:"10vw",
             color:"#F9F5F0",
-            border: 'none',              
-            borderRadius: '5px',         
-            fontSize: '16px',           
+            border: 'none',                                
             fontWeight: 'bold',          
             cursor: 'pointer',           
             transition: 'all 0.4s ease', 
@@ -56,12 +25,12 @@ function Login() {
             overflow: 'hidden', 
         },
         buttonHover: {
-            backgroundColor: '#e38b00',  // Darker on hover
-            transform: 'scale(1.05)',    // Slightly enlarge on hover
+            backgroundColor: '#e38b00',  
+            transform: 'scale(1.05)',    
           },
           buttonActive: {
-            backgroundColor: '#c77500',  // Even darker when pressed
-            transform: 'scale(0.98)',    // Slightly shrink on press
+            backgroundColor: '#c77500',  
+            transform: 'scale(0.98)',   
           },
           ripple: {
             position: 'absolute',
@@ -73,6 +42,11 @@ function Login() {
             transform: 'translate(-50%, -50%)',
             pointerEvents: 'none',
           },
+    }
+
+      
+    const onSubmit = (data) => {
+            console.log(data)
     }
     const handleClick = (e) => {
         const button = e.currentTarget;
@@ -95,61 +69,43 @@ function Login() {
         ripple.addEventListener('animationend', () => {
             ripple.remove();
           });
-        };
+        }
     return(
         <>
-            <section style={styles.loginbox}className="flex flex-row justify-center items-center font-sans text-2xl font-bold">
-                
-                <div className="flex flex-row  " style={styles.box}>
-                    <div className="flex flex-col justify-evenly items-center" style={styles.boxdivider}>
-                        <h1 className="">LOGIN</h1>
-                        <div className="text-sm flex justify-center items-center w-3/6 "><p>Welcome back buddy!! We are ready to serve you a warm food on time</p></div>
+        <section className="h-dvh background-lg">  
+            <div className="h-dvh sm:backdrop-brightness-75 sm:backdrop-blur-sm flex justify-center items-center">
+                <div className="h-full w-full sm:w-3/4 sm:border sm:rounded-xl sm:h-fit md:h-fit md:w-[40rem] flex flex-col space-y-8 justify-center bg-[#fdfaf2] sm:bg-[#f0f0f0] p-8 md:px-10">
+                    <h1 className="text-4xl font-bold">Sign in</h1>
+                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-6 ">
                         <div>
-                            <img src={logo} alt="" style={styles.logo}></img>
+                            <input id="userName" placeholder="Username" className={`w-full  p-4 md:p-2 px-6 md:px-6 text-xl rounded-xl shadow-lg focus:outline-none ${errors.userName && "border border-red-500"}`}
+                                {...register("userName", { required: "Username is Required!" })}
+                                />
+                            {errors.userName && <p className="text-red-500 pl-6 pt-1">{errors.userName.message}</p>}
                         </div>
-                        <div className="toggle-switch flex flex" >
-                            <input style={styles.input} type="checkbox" id="toggle" onClick={()=>{setLoginmethod(!loginmethod)}}/>
-                            <label for="toggle" className="toggle-switch-label"><span className="toggle-switch-handle"></span></label>
-                        </div>
-                            <p>login with <span>{loginmethod?`number`:`username` }</span></p>
-                    </div>
-                    
-                    <div id="form" style={styles.form}className="flex flex-col items-center flex-col justify-evenly">
-                        {loginmethod? 
-                        <div className="username items-center flex flex-row " style={styles.inputs} >
-                            <label style={styles.label}>Username</label>
-                            <input style={styles.input} type="text" className="" onChange={(e)=>setUsername(e.target.value)}></input>
-                        </div>
-                        :
-                        <div className="number items-center flex flex-row " style={styles.inputs}>
-                            <label style={styles.label}>Number</label>
-                            <input style={styles.input} type="number"  onChange={(e)=>setNumber(e.target.value)}></input>
-                        </div>}
-                        <div className="password items-center flex flex-row ">
-                            <label style={styles.label}>Password</label>
-                            <input style={styles.input} type={passwordDisplayer? "text" : "password"}  className="" onChange={(e)=>setPassword(e.target.value)}></input>
-                        </div>
-                        <div className="flex flex-row justify-center items-center " >
-                            <div className="justify-center items-center" >
-                            <label >Show Password</label>
-                            </div>
-                            <div className="justify-center items-center" style={styles.inputs}>
-                                <label style={styles.label}  htmlFor="showPassword" className="eye-icon" >
-                                    <button onClick={()=>{setpasswordDisplayer(!passwordDisplayer)}}><i className={passwordDisplayer ? "far fa-eye-slash fa-lg" : "far fa-eye fa-lg"}></i></button>
-                                </label>
+                        <div className="relative">
+                            <input id="passWord" type={passWordToggle ? "password" : "text"} placeholder="Password" className={`w-full p-4 md:p-2 px-6 md:px-6 text-xl rounded-xl shadow-lg focus:outline-none ${errors.passWord && "border border-red-500"}`}
+                            {...register("passWord", { required: "Password is Required!" })}/>
+                            {errors.passWord && <p className="text-red-500 pl-6 pt-1">{errors.passWord.message}</p>}
+                            <div className="absolute w-fit h-fit top-3 md:top-1.5 right-4 cursor-pointer" onClick={() => setPassWordToggle((prev) => !prev)}>
+                                {passWordToggle ? <span className="material-symbols-outlined text-3xl">lock</span> : <span className="material-symbols-outlined text-3xl">lock_open</span>}
                             </div>
                         </div>
-
-                        <button className="button" style={styles.button} 
+                        <button className="button py-2 rounded-xl w-[96%] mx-auto" style={styles.button} type="submit"
                             onMouseEnter={(e) => Object.assign(e.currentTarget.style, styles.buttonHover)}     
                             onMouseLeave={(e) => Object.assign(e.currentTarget.style, styles.button)}
                             onMouseDown={(e) => Object.assign(e.currentTarget.style, styles.buttonActive)}
                             onMouseUp={(e) => Object.assign(e.currentTarget.style, styles.buttonHover)}
                             onClick={handleClick}>Login
                         </button>
-                    </div>
+                        <div className="flex justify-between">
+                            <i className="self-start text-[#ffa000] cursor-pointer" onClick={() => navigate('/signup')}>New Here?</i>
+                            <i className="self-end text-[#ffa000] cursor-pointer">Forgot Password?</i>
+                        </div>
+                    </form>
                 </div>
-            </section>
+            </div>
+        </section>
         </>
     )
 
