@@ -6,6 +6,7 @@ import Login from './components/login'
 const FavouritePage = lazy(()=> import('./components/FavouritePage'))
 const SignUp = lazy(() => import('./components/signup'))
 const Home = lazy(()=> import('./components/Home'))
+const MenuPage = lazy(()=> import('./components/MenuPg'))
 function RedirectPage() {
     return <Navigate to='/login'/>
 }
@@ -73,6 +74,7 @@ const handleClick = (e) => {
         <Route path='/signup' element={<Suspense><SignUp styles={styles} handleClick={handleClick}/></Suspense>}/>
         <Route path='/home' element={<Suspense><Home styles={styles} wishList={wishList} setWishList={setWishList} handleClick={handleClick}/></Suspense>}/>
         <Route path='/favourite' element={<Suspense><FavouritePage styles={styles} wishList={wishList} setWishList={setWishList} handleClick={handleClick} /></Suspense>}/>
+        <Route path='/menu' element={<Suspense><MenuPage styles={styles} wishList={wishList} setWishList={setWishList} handleClick={handleClick} /></Suspense>}></Route>
       </Routes>
     </BrowserRouter>
     </>
