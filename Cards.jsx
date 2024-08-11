@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import { useState } from 'react'; 
 const Cards = (props) => { 
@@ -19,7 +20,7 @@ const Cards = (props) => {
                 setLoading(false);
             });
         }, []);
-    
+    const navigate = useNavigate();
     const addWishlist = (index)=>{
         let present = false;
         props.wishList.forEach(element => {
@@ -36,7 +37,10 @@ const Cards = (props) => {
             console.log(props.wishList)
         }
     }
-    
+    const move = (index)=>{
+        // console.log(obj[index])
+        navigate('/menu', { state: { obj: obj[index], index } })
+    }
     console.log(props.query)
     console.log(typeof props.query)
   return (
@@ -64,7 +68,7 @@ const Cards = (props) => {
                             onMouseLeave={(e) => Object.assign(e.currentTarget.style, props.styles.button)}
                             onMouseDown={(e) => Object.assign(e.currentTarget.style, props.styles.buttonActive)}
                             onMouseUp={(e) => Object.assign(e.currentTarget.style, props.styles.buttonHover)}
-                            onClick={props.handleClick}>BOOK NOW!</button>
+                            onClick={(e)=>{props.handleClick(e);move(index)}}>BOOK NOW!</button>
                         <button style={props.styles.button} className=" mb-2 rounded-lg mx-2 px-4 py-2 justify-items-end  text-white "  onMouseEnter={(e) => Object.assign(e.currentTarget.style, props.styles.buttonHover)}     
                             onMouseLeave={(e) => Object.assign(e.currentTarget.style, props.styles.button)}
                             onMouseDown={(e) => Object.assign(e.currentTarget.style, props.styles.buttonActive)}
@@ -92,7 +96,7 @@ const Cards = (props) => {
                             onMouseLeave={(e) => Object.assign(e.currentTarget.style, props.styles.button)}
                             onMouseDown={(e) => Object.assign(e.currentTarget.style, props.styles.buttonActive)}
                             onMouseUp={(e) => Object.assign(e.currentTarget.style, props.styles.buttonHover)}
-                            onClick={props.handleClick}>BOOK NOW!</button>
+                            onClick={(e)=>{props.handleClick(e);move(index)}}>BOOK NOW!</button>
                         <button style={props.styles.button} className=" mb-2 rounded-lg mx-2 px-4 py-2 justify-items-end  text-white "  onMouseEnter={(e) => Object.assign(e.currentTarget.style, props.styles.buttonHover)}     
                             onMouseLeave={(e) => Object.assign(e.currentTarget.style, props.styles.button)}
                             onMouseDown={(e) => Object.assign(e.currentTarget.style, props.styles.buttonActive)}
