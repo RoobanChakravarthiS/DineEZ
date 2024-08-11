@@ -6,15 +6,15 @@ import Search from './Search'
 
 
 
-function Home() {
+function Home(props) {
   
   return (
     <>
     <div className='h-dvh bg-[#fff7ed]'>
-      <Header/>
-      <Search />
-      <Cards/>
-      <Footer/>
+      <Header styles={props.styles} wishList={props.wishList} setWishList={props.setWishList} handleClick={props.handleClick}/>
+      <Search styles={props.styles} wishList={props.wishList} setWishList={props.setWishList} handleClick={props.handleClick}/>
+      <Cards styles={props.styles} wishList={props.wishList} setWishList={props.setWishList} handleClick={props.handleClick}/>
+      <Footer styles={props.styles} wishList={props.wishList} setWishList={props.setWishList} handleClick={props.handleClick}/>
     </div>
     </>
   )
