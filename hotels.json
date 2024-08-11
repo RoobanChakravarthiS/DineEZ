@@ -1,34 +1,5 @@
 [
-  {
-    "hotelName": "Sree Annapoorna",
-    "rating": 4.5,
-    "location": "NSR Road, Saibaba Colony and East Arokiasamy Road, RS Puram, Coimbatore",
-    "timing": "5:30 am – 10:30 pm at Saibaba Colony and 6:00 am to 10:00 pm at RS Puram",
-    "imageLink": "https://files.yappe.in/place/full/sree-annapoorna-kuniyamuthur-7201952.webp",
-    "description": "A luxurious hotel offering fine dining and top-notch amenities. Perfect for a royal experience.",
-    "tableCount": 50,
-    "ac": true
-  },
-  {
-    "hotelName": "Haribhavanam",
-    "rating": 4.2,
-    "location": "Bharathi Colony, Peelamedu, Coimbatore",
-    "timing": "Every day 11:45 am-4:00 pm and 7:00 pm-10:30 pm",
-    "imageLink": "https://b.zmtcdn.com/data/pictures/6/20412586/802d7381883132b0d68f7a595a05040d.jpg",
-    "description": "A cozy inn with stunning ocean views. Ideal for a relaxing getaway.",
-    "tableCount": 30,
-    "ac": false
-  },
-  {
-    "hotelName": "Junior Kuppanna",
-    "rating": 4.7,
-    "location": " Peelamedu and Gandhipuram, Coimbatore",
-    "timing": "11:00 am-4:30 pm and 6:30 pm-11:00 pm (Gandhipuram)",
-    "imageLink": "https://cdn.shopify.com/s/files/1/0593/9068/9432/files/junior-kuppanna-colombo_06a656f3-767b-42fe-a646-76c21d9f62fc.jpg?v=1686394421",
-    "description": "A serene retreat nestled in the mountains. Enjoy nature at its finest.",
-    "tableCount": 40,
-    "ac": true
-  },
+  
   
     {
       "hotelName": "Sree Annapoorna",
