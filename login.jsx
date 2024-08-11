@@ -2,73 +2,19 @@ import { useState } from "react";
 import { useForm } from 'react-hook-form';
 import { useNavigate } from "react-router-dom";
 import '../App.css';
-import bg from "../assets/background.jpg";
-import logo from '../assets/logo.png';
 
-function Login() {
+function Login(props) {
 
     const { register, handleSubmit, formState: { errors } } = useForm()
     const navigate = useNavigate()
 
     const [passWordToggle,setPassWordToggle] = useState(true)
-
-    const styles={  
-        button:{
-            backgroundColor:"#321313",
-            color:"#F9F5F0",
-            border: 'none',                                
-            fontWeight: 'bold',          
-            cursor: 'pointer',           
-            transition: 'all 0.4s ease', 
-            boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)', 
-            position: 'relative',        
-            overflow: 'hidden', 
-        },
-        buttonHover: {
-            backgroundColor: '#e38b00',  
-            transform: 'scale(1.05)',    
-          },
-          buttonActive: {
-            backgroundColor: '#c77500',  
-            transform: 'scale(0.98)',   
-          },
-          ripple: {
-            position: 'absolute',
-            borderRadius: '50%',
-            width: '300px',
-            height: '300px',
-            background: 'rgba(255, 255, 255, 0.5)',
-            animation: 'ripple 0.6s linear',
-            transform: 'translate(-50%, -50%)',
-            pointerEvents: 'none',
-          },
-    }
-
-      
     const onSubmit = (data) => {
             console.log(data)
     }
-    const handleClick = (e) => {
-        const button = e.currentTarget;
-        const rect = button.getBoundingClientRect();
-        const ripple = document.createElement('span');
-    
-        ripple.style.left = `${e.clientX - rect.left}px`;
-        ripple.style.top = `${e.clientY - rect.top}px`;
-    
-        ripple.style.position = styles.ripple.position;
-        ripple.style.borderRadius = styles.ripple.borderRadius;
-        ripple.style.width = styles.ripple.width;
-        ripple.style.height = styles.ripple.height;
-        ripple.style.background = styles.ripple.background;
-        ripple.style.animation = styles.ripple.animation;
-        ripple.style.transform = styles.ripple.transform;
-        ripple.style.pointerEvents = styles.ripple.pointerEvents;
-    
-        button.appendChild(ripple);
-        ripple.addEventListener('animationend', () => {
-            ripple.remove();
-          });
+   
+        const loginUser = ()=>{
+            navigate('/home');
         }
     return(
         <>
@@ -91,12 +37,12 @@ function Login() {
                                 {passWordToggle ? <span className="material-symbols-outlined text-3xl">lock</span> : <span className="material-symbols-outlined text-3xl">lock_open</span>}
                             </div>
                         </div>
-                        <button className="button py-2 rounded-xl w-[96%] mx-auto" style={styles.button} type="submit"
-                            onMouseEnter={(e) => Object.assign(e.currentTarget.style, styles.buttonHover)}     
-                            onMouseLeave={(e) => Object.assign(e.currentTarget.style, styles.button)}
-                            onMouseDown={(e) => Object.assign(e.currentTarget.style, styles.buttonActive)}
-                            onMouseUp={(e) => Object.assign(e.currentTarget.style, styles.buttonHover)}
-                            onClick={handleClick}>Login
+                        <button className="button py-2 rounded-xl w-[96%] mx-auto" style={props.styles.button} type="submit"
+                            onMouseEnter={(e) => Object.assign(e.currentTarget.style, props.styles.buttonHover)}     
+                            onMouseLeave={(e) => Object.assign(e.currentTarget.style, props.styles.button)}
+                            onMouseDown={(e) => Object.assign(e.currentTarget.style, props.styles.buttonActive)}
+                            onMouseUp={(e) => Object.assign(e.currentTarget.style, props.styles.buttonHover)}
+                            onClick={(e)=>{props.handleClick(e);loginUser()}}>Login
                         </button>
                         <div className="flex justify-between">
                             <i className="self-start text-[#ffa000] cursor-pointer" onClick={() => navigate('/signup')}>New Here?</i>
