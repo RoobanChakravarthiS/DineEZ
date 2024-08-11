@@ -1,0 +1,417 @@
+[
+  {
+    "hotelName": "Sree Annapoorna",
+    "rating": 4.5,
+    "location": "NSR Road, Saibaba Colony and East Arokiasamy Road, RS Puram, Coimbatore",
+    "timing": "5:30 am – 10:30 pm at Saibaba Colony and 6:00 am to 10:00 pm at RS Puram",
+    "imageLink": "https://files.yappe.in/place/full/sree-annapoorna-kuniyamuthur-7201952.webp",
+    "description": "A luxurious hotel offering fine dining and top-notch amenities. Perfect for a royal experience.",
+    "tableCount": 50,
+    "ac": true
+  },
+  {
+    "hotelName": "Haribhavanam",
+    "rating": 4.2,
+    "location": "Bharathi Colony, Peelamedu, Coimbatore",
+    "timing": "Every day 11:45 am-4:00 pm and 7:00 pm-10:30 pm",
+    "imageLink": "https://b.zmtcdn.com/data/pictures/6/20412586/802d7381883132b0d68f7a595a05040d.jpg",
+    "description": "A cozy inn with stunning ocean views. Ideal for a relaxing getaway.",
+    "tableCount": 30,
+    "ac": false
+  },
+  {
+    "hotelName": "Junior Kuppanna",
+    "rating": 4.7,
+    "location": " Peelamedu and Gandhipuram, Coimbatore",
+    "timing": "11:00 am-4:30 pm and 6:30 pm-11:00 pm (Gandhipuram)",
+    "imageLink": "https://cdn.shopify.com/s/files/1/0593/9068/9432/files/junior-kuppanna-colombo_06a656f3-767b-42fe-a646-76c21d9f62fc.jpg?v=1686394421",
+    "description": "A serene retreat nestled in the mountains. Enjoy nature at its finest.",
+    "tableCount": 40,
+    "ac": true
+  },
+  
+    {
+      "hotelName": "Sree Annapoorna",
+      "rating": 4.5,
+      "location": "NSR Road, Saibaba Colony and East Arokiasamy Road, RS Puram, Coimbatore",
+      "timing": "5:30 am – 10:30 pm at Saibaba Colony and 6:00 am to 10:00 pm at RS Puram",
+      "imageLink": "https://files.yappe.in/place/full/sree-annapoorna-kuniyamuthur-7201952.webp",
+      "description": "A luxurious hotel offering fine dining and top-notch amenities. Perfect for a royal experience.",
+      "tableCount": 50,
+      "ac": true,
+      "menu": [
+        {
+          "foodName": "Masala Dosa",
+          "cost": 100,
+          "preparationTime": "15 minutes",
+          "ingredients": ["Rice", "Urad Dal", "Potatoes", "Onions", "Spices"],
+          "ratings": 4.5,
+          "foodImage": "https://example.com/images/masala_dosa.jpg"
+        },
+        {
+          "foodName": "Idli",
+          "cost": 50,
+          "preparationTime": "10 minutes",
+          "ingredients": ["Rice", "Urad Dal", "Salt", "Water"],
+          "ratings": 4.3,
+          "foodImage": "https://example.com/images/idli.jpg"
+        },
+        {
+          "foodName": "Sambar Vada",
+          "cost": 60,
+          "preparationTime": "20 minutes",
+          "ingredients": ["Urad Dal", "Sambar", "Spices"],
+          "ratings": 4.6,
+          "foodImage": "https://example.com/images/sambar_vada.jpg"
+        },
+        {
+          "foodName": "Paneer Butter Masala",
+          "cost": 180,
+          "preparationTime": "25 minutes",
+          "ingredients": ["Paneer", "Butter", "Tomatoes", "Cream", "Spices"],
+          "ratings": 4.6,
+          "foodImage": "https://example.com/images/paneer_butter_masala.jpg"
+        },
+        {
+          "foodName": "Rava Kesari",
+          "cost": 70,
+          "preparationTime": "20 minutes",
+          "ingredients": ["Rava", "Ghee", "Sugar", "Cardamom", "Saffron"],
+          "ratings": 4.4,
+          "foodImage": "https://example.com/images/rava_kesari.jpg"
+        },
+        {
+          "foodName": "Poori Masala",
+          "cost": 80,
+          "preparationTime": "15 minutes",
+          "ingredients": ["Wheat Flour", "Potatoes", "Spices", "Onions"],
+          "ratings": 4.3,
+          "foodImage": "https://example.com/images/poori_masala.jpg"
+        },
+        {
+          "foodName": "Mysore Pak",
+          "cost": 90,
+          "preparationTime": "30 minutes",
+          "ingredients": ["Gram Flour", "Ghee", "Sugar"],
+          "ratings": 4.7,
+          "foodImage": "https://example.com/images/mysore_pak.jpg"
+        },
+        {
+          "foodName": "Vegetable Biryani",
+          "cost": 150,
+          "preparationTime": "45 minutes",
+          "ingredients": ["Basmati Rice", "Mixed Vegetables", "Spices"],
+          "ratings": 4.5,
+          "foodImage": "https://example.com/images/vegetable_biryani.jpg"
+        }
+      ]
+    },
+    {
+      "hotelName": "Haribhavanam",
+      "rating": 4.2,
+      "location": "Bharathi Colony, Peelamedu, Coimbatore",
+      "timing": "Every day 11:45 am-4:00 pm and 7:00 pm-10:30 pm",
+      "imageLink": "https://b.zmtcdn.com/data/pictures/6/20412586/802d7381883132b0d68f7a595a05040d.jpg",
+      "description": "A cozy inn with stunning ocean views. Ideal for a relaxing getaway.",
+      "tableCount": 30,
+      "ac": false,
+      "menu": [
+        {
+          "foodName": "Chicken Biryani",
+          "cost": 250,
+          "preparationTime": "45 minutes",
+          "ingredients": ["Chicken", "Basmati Rice", "Spices", "Yogurt", "Onions"],
+          "ratings": 4.7,
+          "foodImage": "https://example.com/images/chicken_biryani.jpg"
+        },
+        {
+          "foodName": "Mutton Rogan Josh",
+          "cost": 300,
+          "preparationTime": "60 minutes",
+          "ingredients": ["Mutton", "Yogurt", "Spices", "Onions", "Garlic"],
+          "ratings": 4.8,
+          "foodImage": "https://example.com/images/mutton_rogan_josh.jpg"
+        },
+        {
+          "foodName": "Tandoori Chicken",
+          "cost": 200,
+          "preparationTime": "40 minutes",
+          "ingredients": ["Chicken", "Yogurt", "Spices", "Lemon"],
+          "ratings": 4.6,
+          "foodImage": "https://example.com/images/tandoori_chicken.jpg"
+        },
+        {
+          "foodName": "Fish Curry",
+          "cost": 220,
+          "preparationTime": "30 minutes",
+          "ingredients": ["Fish", "Coconut Milk", "Spices"],
+          "ratings": 4.5,
+          "foodImage": "https://example.com/images/fish_curry.jpg"
+        },
+        {
+          "foodName": "Gulab Jamun",
+          "cost": 100,
+          "preparationTime": "20 minutes",
+          "ingredients": ["Milk Powder", "Sugar", "Cardamom", "Ghee"],
+          "ratings": 4.8,
+          "foodImage": "https://example.com/images/gulab_jamun.jpg"
+        },
+        {
+          "foodName": "Paneer Tikka",
+          "cost": 180,
+          "preparationTime": "30 minutes",
+          "ingredients": ["Paneer", "Spices", "Yogurt", "Lemon"],
+          "ratings": 4.6,
+          "foodImage": "https://example.com/images/paneer_tikka.jpg"
+        },
+        {
+          "foodName": "Butter Naan",
+          "cost": 50,
+          "preparationTime": "10 minutes",
+          "ingredients": ["Flour", "Butter", "Salt", "Yeast"],
+          "ratings": 4.5,
+          "foodImage": "https://example.com/images/butter_naan.jpg"
+        },
+        {
+          "foodName": "Prawn Masala",
+          "cost": 260,
+          "preparationTime": "35 minutes",
+          "ingredients": ["Prawns", "Spices", "Coconut", "Onions"],
+          "ratings": 4.7,
+          "foodImage": "https://example.com/images/prawn_masala.jpg"
+        }
+      ]
+    },
+    {
+      "hotelName": "Junior Kuppanna",
+      "rating": 4.7,
+      "location": "Peelamedu and Gandhipuram, Coimbatore",
+      "timing": "11:00 am-4:30 pm and 6:30 pm-11:00 pm (Gandhipuram)",
+      "imageLink": "https://cdn.shopify.com/s/files/1/0593/9068/9432/files/junior-kuppanna-colombo_06a656f3-767b-42fe-a646-76c21d9f62fc.jpg?v=1686394421",
+      "description": "A serene retreat nestled in the mountains. Enjoy nature at its finest.",
+      "tableCount": 40,
+      "ac": true,
+      "menu": [
+        {
+          "foodName": "Mutton Biryani",
+          "cost": 270,
+          "preparationTime": "50 minutes",
+          "ingredients": ["Mutton", "Basmati Rice", "Spices", "Onions", "Tomatoes"],
+          "ratings": 4.7,
+          "foodImage": "https://example.com/images/mutton_biryani.jpg"
+        },
+        {
+          "foodName": "Chicken Kebab",
+          "cost": 150,
+          "preparationTime": "30 minutes",
+          "ingredients": ["Chicken", "Spices", "Lemon", "Yogurt"],
+          "ratings": 4.6,
+          "foodImage": "https://example.com/images/chicken_kebab.jpg"
+        },
+        {
+          "foodName": "Parotta",
+          "cost": 40,
+          "preparationTime": "20 minutes",
+          "ingredients": ["Flour", "Ghee", "Salt"],
+          "ratings": 4.4,
+          "foodImage": "https://example.com/images/parotta.jpg"
+        },
+        {
+          "foodName": "Mutton Sukka",
+          "cost": 220,
+          "preparationTime": "40 minutes",
+          "ingredients": ["Mutton", "Spices", "Coconut", "Onions"],
+          "ratings": 4.5,
+          "foodImage": "https://example.com/images/mutton_sukka.jpg"
+        },
+        {
+          "foodName": "Chana Masala",
+          "cost": 120,
+          "preparationTime": "30 minutes",
+          "ingredients": ["Chickpeas", "Tomatoes", "Onions", "Spices"],
+          "ratings": 4.4,
+          "foodImage": "https://example.com/images/chana_masala.jpg"
+        },
+        {
+          "foodName": "Aloo Gobi",
+          "cost": 100,
+          "preparationTime": "25 minutes",
+          "ingredients": ["Potatoes", "Cauliflower", "Spices", "Tomatoes"],
+          "ratings": 4.3,
+          "foodImage": "https://example.com/images/aloo_gobi.jpg"
+        },
+        {
+          "foodName": "Egg Curry",
+          "cost": 150,
+          "preparationTime": "30 minutes",
+          "ingredients": ["Eggs", "Tomatoes", "Onions", "Spices"],
+          "ratings": 4.6,
+          "foodImage": "https://example.com/images/egg_curry.jpg"
+        },
+        {
+          "foodName": "Ghee Rice",
+          "cost": 100,
+          "preparationTime": "25 minutes",
+          "ingredients": ["Rice", "Ghee", "Spices", "Cashews"],
+          "ratings": 4.5,
+          "foodImage": "https://example.com/images/ghee_rice.jpg"
+        }
+      ]
+    },
+      {
+        "hotelName": "Kokkarakko",
+        "rating": 4.3,
+        "location": "Koundam Palayam, Coimbatore",
+        "timing": "24/7",
+        "imageLink": "https://b.zmtcdn.com/data/pictures/3/3000153/ec14d8d4f223bf35b18757f23065ff9a.jpg",
+        "description": "A modern hotel located in the heart of the city. Convenient for business and leisure travelers.",
+        "tableCount": 60,
+        "ac": true,
+        "menu": [
+          {
+            "foodName": "Chicken Shawarma",
+            "cost": 180,
+            "preparationTime": "25 minutes",
+            "ingredients": ["Chicken", "Yogurt", "Garlic", "Spices", "Pita Bread"],
+            "ratings": 4.6,
+            "foodImage": "https://example.com/images/chicken_shawarma.jpg"
+          },
+          {
+            "foodName": "Falafel",
+            "cost": 120,
+            "preparationTime": "20 minutes",
+            "ingredients": ["Chickpeas", "Garlic", "Onions", "Spices"],
+            "ratings": 4.5,
+            "foodImage": "https://example.com/images/falafel.jpg"
+          },
+          {
+            "foodName": "Hummus",
+            "cost": 150,
+            "preparationTime": "15 minutes",
+            "ingredients": ["Chickpeas", "Tahini", "Garlic", "Lemon Juice"],
+            "ratings": 4.7,
+            "foodImage": "https://example.com/images/hummus.jpg"
+          },
+          {
+            "foodName": "Grilled Salmon",
+            "cost": 220,
+            "preparationTime": "30 minutes",
+            "ingredients": ["Salmon", "Lemon", "Olive Oil", "Herbs"],
+            "ratings": 4.8,
+            "foodImage": "https://example.com/images/grilled_salmon.jpg"
+          },
+          {
+            "foodName": "Beef Burger",
+            "cost": 250,
+            "preparationTime": "20 minutes",
+            "ingredients": ["Beef Patty", "Bun", "Lettuce", "Tomato", "Cheese"],
+            "ratings": 4.5,
+            "foodImage": "https://example.com/images/beef_burger.jpg"
+          },
+          {
+            "foodName": "Caesar Salad",
+            "cost": 130,
+            "preparationTime": "15 minutes",
+            "ingredients": ["Lettuce", "Chicken", "Croutons", "Caesar Dressing"],
+            "ratings": 4.4,
+            "foodImage": "https://example.com/images/caesar_salad.jpg"
+          },
+          {
+            "foodName": "Spaghetti Carbonara",
+            "cost": 190,
+            "preparationTime": "25 minutes",
+            "ingredients": ["Spaghetti", "Pancetta", "Eggs", "Parmesan Cheese"],
+            "ratings": 4.6,
+            "foodImage": "https://example.com/images/spaghetti_carbonara.jpg"
+          },
+          {
+            "foodName": "Tiramisu",
+            "cost": 160,
+            "preparationTime": "45 minutes",
+            "ingredients": ["Mascarpone Cheese", "Coffee", "Ladyfingers", "Cocoa Powder"],
+            "ratings": 4.7,
+            "foodImage": "https://example.com/images/tiramisu.jpg"
+          }
+        ]
+      },
+      {
+        "hotelName": "SS Hyderabad Biryani",
+        "rating": 4.0,
+        "location": "New VS Towers , NO: 51, 11th Street, Cross Cut Rd, Gandhipuram,Coimbatore",
+        "timing": "11:00 AM - 12:00 AM",
+        "imageLink": "https://www.lentlo.com/wp-content/uploads/2023/08/2021-03-28.jpg",
+        "description": "An exotic hotel in the middle of the desert. Experience the charm of the sands.",
+        "tableCount": 25,
+        "ac": true,
+        "menu": [
+          {
+            "foodName": "Hyderabadi Biryani",
+            "cost": 250,
+            "preparationTime": "60 minutes",
+            "ingredients": ["Basmati Rice", "Mutton", "Yogurt", "Spices", "Saffron"],
+            "ratings": 4.8,
+            "foodImage": "https://example.com/images/hyderabadi_biryani.jpg"
+          },
+          {
+            "foodName": "Chicken Korma",
+            "cost": 200,
+            "preparationTime": "45 minutes",
+            "ingredients": ["Chicken", "Yogurt", "Spices", "Almonds"],
+            "ratings": 4.7,
+            "foodImage": "https://example.com/images/chicken_korma.jpg"
+          },
+          {
+            "foodName": "Vegetable Pulao",
+            "cost": 150,
+            "preparationTime": "30 minutes",
+            "ingredients": ["Rice", "Mixed Vegetables", "Spices"],
+            "ratings": 4.5,
+            "foodImage": "https://example.com/images/vegetable_pulao.jpg"
+          },
+          {
+            "foodName": "Raita",
+            "cost": 80,
+            "preparationTime": "10 minutes",
+            "ingredients": ["Yogurt", "Cucumber", "Spices"],
+            "ratings": 4.4,
+            "foodImage": "https://example.com/images/raita.jpg"
+          },
+          {
+            "foodName": "Shahi Tukda",
+            "cost": 120,
+            "preparationTime": "25 minutes",
+            "ingredients": ["Bread", "Milk", "Sugar", "Nuts"],
+            "ratings": 4.6,
+            "foodImage": "https://example.com/images/shahi_tukda.jpg"
+          },
+          {
+            "foodName": "Kebab Platter",
+            "cost": 220,
+            "preparationTime": "35 minutes",
+            "ingredients": ["Various Kebabs", "Yogurt Sauce"],
+            "ratings": 4.7,
+            "foodImage": "https://example.com/images/kebab_platter.jpg"
+          },
+          {
+            "foodName": "Naan",
+            "cost": 50,
+            "preparationTime": "10 minutes",
+            "ingredients": ["Flour", "Yeast", "Butter"],
+            "ratings": 4.3,
+            "foodImage": "https://example.com/images/naan.jpg"
+          },
+          {
+            "foodName": "Gulab Jamun",
+            "cost": 100,
+            "preparationTime": "20 minutes",
+            "ingredients": ["Milk Powder", "Sugar", "Cardamom", "Ghee"],
+            "ratings": 4.5,
+            "foodImage": "https://example.com/images/gulab_jamun.jpg"
+          }
+        ]
+      }
+    
+    
+  ]
+  
+  
