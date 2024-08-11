@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-function Header() {
+function Header(props) {
   return (
     <>
         <section className=' sm:h-max h-fit background-lg'>
